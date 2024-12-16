@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/nav_graph"
+            app:startDestination="@id/loginFragment">
+
+    <fragment
+            android:id="@+id/registerFragment"
+            android:name="com.example.final_project.fragment.RegisterFragment"
+            android:label="Register">
+        <action
+                android:id="@+id/action_registerFragment_to_loginFragment"
+                app:destination="@id/loginFragment" />
+    </fragment>
+
+    <fragment
+            android:id="@+id/loginFragment"
+            android:name="com.example.final_project.fragment.LoginFragment"
+            android:label="Login">
+        <action
+                android:id="@+id/action_loginFragment_to_mainFragment"
+                app:destination="@id/mainFragment" />
+        <action
+                android:id="@+id/action_loginFragment_to_registerFragment"
+                app:destination="@id/registerFragment" />
+    </fragment>
+
+    <fragment
+            android:id="@+id/mainFragment"
+            android:name="com.example.final_project.fragment.MainFragment"
+            android:label="Главная">
+        <action
+                android:id="@+id/action_mainFragment_to_taskListFragment"
+                app:destination="@id/taskListFragment" />
+        <action
+                android:id="@+id/action_mainFragment_to_profileFragment"
+                app:destination="@id/profileFragment" />
+        <action
+                android:id="@+id/action_mainFragment_to_taskItemFragment"
+                app:destination="@id/taskItemFragment" />
+    </fragment>
+
+    <fragment
+            android:id="@+id/profileFragment"
+            android:name="com.example.final_project.fragment.ProfileFragment"
+            android:label="Профиль">
+        <action
+                android:id="@+id/action_profileFragment_to_mainFragment"
+                app:destination="@id/mainFragment" />
+        <action
+                android:id="@+id/action_profileFragment_to_taskListFragment"
+                app:destination="@id/taskListFragment" />
+        <action
+                android:id="@+id/action_profileFragment_to_loginFragment"
+                app:destination="@id/loginFragment" />
+    </fragment>
+
+    <fragment
+            android:id="@+id/taskListFragment"
+            android:name="com.example.final_project.fragment.TaskListFragment"
+            android:label="Task List">
+        <action
+                android:id="@+id/action_taskListFragment_to_taskItemFragment"
+                app:destination="@id/taskItemFragment" />
+        <action
+                android:id="@+id/action_taskListFragment_to_mainFragment"
+                app:destination="@id/mainFragment" />
+        <action
+                android:id="@+id/action_taskListFragment_to_profileFragment"
+                app:destination="@id/profileFragment" />
+    </fragment>
+
+    <fragment
+            android:id="@+id/taskItemFragment"
+            android:name="com.example.final_project.fragment.TaskItemFragment"
+            android:label="Task Item">
+        <action
+                android:id="@+id/action_taskItemFragment_to_TaskListFragment"
+                app:destination="@id/taskListFragment" />
+    </fragment>
+</navigation>

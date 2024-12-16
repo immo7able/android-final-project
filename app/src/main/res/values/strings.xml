@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">final-project</string>
+    <string name="register">Register</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="login">Login</string>
+    <string name="welcome">Welcome to Task Scheduler!</string>
+    <string name="main_page">Главная</string>
+    <string name="task_list">Список задач</string>
+    <string name="profile">Профиль</string>
+    <string name="save">Сохранить</string>
+    <string name="avatar">avatar</string>
+    <string name="task_title">Task Title</string>
+    <string name="task_description">Task Description</string>
+    <string name="task_status">Task Status</string>
+    <string name="title">Название задачи</string>
+    <string name="description">Описание задачи</string>
+    <string name="date">Дата</string>
+    <string name="status">Статус</string>
+    <string name="task_date">Введите дату (YYYY-MM-DDTHH:MM)</string>
+    <string name="delete">Удалить</string>
+    <string name="add_task">Добавить</string>
+    <string name="select_time">Select Time</string>
+    <string name="select_date">Select Date</string>
+    <string name="logout">Выйти</string>
+</resources>
